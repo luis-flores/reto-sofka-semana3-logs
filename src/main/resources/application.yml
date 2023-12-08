@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      uri: ${mongo.uri}
+
+rabbit:
+  uri: ${rabbit.uri}
