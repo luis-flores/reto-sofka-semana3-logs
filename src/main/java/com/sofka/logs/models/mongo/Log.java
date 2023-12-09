@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 
-@Document("Logs")
+@Document("M_Logs")
 public class Log {
     @Id
     private String id;
@@ -43,5 +43,14 @@ public class Log {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "Log{" +
+            "id='" + id + '\'' +
+            ", message='" + message + '\'' +
+            ", date=" + date +
+            '}';
     }
 }

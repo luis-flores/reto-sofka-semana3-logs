@@ -13,4 +13,13 @@ public class LogDTO {
     private String id;
     private String message;
     private Date date;
+
+    @Override
+    public String toString() {
+        return "LogDTO{" +
+            "id='" + id + '\'' +
+            ", message='" + message + '\'' +
+            ", date=" + date +
+            '}';
+    }
 }

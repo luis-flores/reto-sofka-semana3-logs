@@ -26,6 +26,8 @@ public class RabbitMqMessageConsumer implements CommandLineRunner {
                 logDTO.setMessage(new String(message.getBody()));
                 logDTO.setDate(new Date());
 
+                System.out.println("Log leido: " + logDTO.toString());
+
                 return saveUseCase.apply(logDTO);
             }).subscribe();
     }
